@@ -3,169 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贴吧表情</title>
+    <title>Emoji API Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
         [v-cloak] { display: none; }
-        /* 电脑端悬浮显示遮罩 */
-        @media (min-min-width: 1024px) {
-            .face-card:hover .overlay { opacity: 1; pointer-events: auto; }
-        }
-        .overlay { opacity: 0; pointer-events: none; transition: opacity 0.2s; }
-        
-        /* 移动端逻辑：点击卡片不应直接触发 overlay 里的复制，除非长按或特定交互 */
-        /* 我们改为：点击卡片整体 = 预览；预览弹窗里提供复制 */
-
+        .platform-card:hover .icon-box { transform: scale(1.1) rotate(-5deg); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        .fade-enter-active, .fade-leave-active { transition: opacity 0.3s ease; }
-        .fade-enter-from, .fade-leave-to { opacity: 0; }
-        
-        .image-loading { background: #f1f5f9; position: relative; overflow: hidden; }
-        .image-loading::after {
-            content: ""; position: absolute; inset: 0; transform: translateX(-100%);
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-            animation: shimmer 1.5s infinite;
-        }
-        @keyframes shimmer { 100% { transform: translateX(100%); } }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-[#f8fafc] text-slate-900 font-sans leading-relaxed">
 
-    <div id="app" v-cloak>
-        <div class="max-w-7xl mx-auto px-4 py-6 md:py-10">
-            <div v-if="!loading" class="flex gap-4 mb-8">
-                <div class="bg-white border border-slate-200 px-5 py-3 rounded-2xl shadow-sm">
-                    <span class="text-[10px] text-slate-400 block font-bold uppercase">Total</span>
-                    <span class="text-2xl font-black text-slate-800">{{ stats.total }}</span>
+    <div id="app" v-cloak class="max-w-5xl mx-auto px-6 py-10 md:py-20">
+        
+        <header class="mb-16">
+            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+                Unified Emoji Assets
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6">表情资源 <span class="text-blue-600">托管中心</span></h1>
+            <p class="text-slate-500 text-lg max-w-2xl font-medium">
+                每个平台提供独立的 API 节点。通过下方链接预览资源，或直接调用静态资源接口。
+            </p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div 
+                v-for="p in platforms" 
+                :key="p.id"
+                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all flex flex-col"
+            >
+                <div class="flex items-start justify-between mb-8">
+                    <div :class="['icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner', p.bg]">
+                        {{ p.icon }}
+                    </div>
+                    <a :href="p.id + '.html'" class="flex items-center gap-2 text-sm font-black text-blue-600 hover:text-blue-700">
+                        进入预览 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
+                    </a>
                 </div>
-                <div class="bg-white border border-slate-200 px-5 py-3 rounded-2xl shadow-sm">
-                    <span class="text-[10px] text-slate-400 block font-bold uppercase">Resources</span>
-                    <span class="text-2xl font-black text-blue-600">{{ stats.hasResource }}</span>
+
+                <h3 class="text-2xl font-black mb-3">{{ p.name }}</h3>
+                <p class="text-slate-400 text-sm mb-6 font-medium">{{ p.desc }}</p>
+
+                <div class="mt-auto">
+                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint Example</div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
+                        <code class="text-xs font-mono text-slate-600 block break-all">
+                            {{ baseHost }}/assets/{{ p.path }}/<span class="text-blue-500 font-bold">{id}</span>.png
+                        </code>
+                        <button 
+                            @click="copy(baseHost + '/assets/' + p.path + '/{id}.png')"
+                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <header class="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
-                <div class="flex items-center gap-2 bg-slate-200 p-1.5 rounded-2xl w-full md:w-auto overflow-x-auto no-scrollbar">
-                    <a href="index.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'tieba' ? 'bg-white shadow text-blue-600' : 'text-slate-500']">百度贴吧</a>
-                    <a href="xiaoheihe.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'xiaoheihe' ? 'bg-white shadow text-gray-600' : 'text-slate-500']">小黑盒</a>
-                    <a href="kuaishou.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'kuaishou' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">快手</a>
-                    <a href="xiaohongshu.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'xiaohongshu' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">小红书</a>
-                </div>
+        <footer class="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-300 text-sm font-bold tracking-tight">© 2026 EMOJI-HUB SERVICE</div>
+            <div class="flex gap-8 text-slate-400 text-sm font-bold">
+                <span class="hover:text-blue-500 cursor-pointer">Status: Online</span>
+                <span class="hover:text-blue-500 cursor-pointer">Docs</span>
+            </div>
+        </footer>
 
-                <div class="relative w-full md:w-80">
-                    <input v-model="searchQuery" type="text" placeholder="搜索 ID 或 描述..." 
-                        class="w-full px-5 py-3.5 bg-white rounded-2xl shadow-sm outline-none focus:ring-2 focus:ring-blue-400 transition-all">
-                </div>
-            </header>
-
-            <main v-if="!loading" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
-                <div 
-                    v-for="(info, id) in filteredFaces" 
-                    :key="id" 
-                    @click="openPreview(info, id)"
-                    class="face-card group relative bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center cursor-pointer transition-transform active:scale-95"
-                >
-                    <div class="aspect-square flex items-center justify-center relative mb-3 bg-slate-50 rounded-2xl w-full overflow-hidden">
-                        <img v-if="info.url" :src="info.url" loading="lazy" class="max-w-[80%] max-h-[80%] object-contain">
-                        <div v-else class="text-[10px] text-slate-300 font-bold">无图</div>
-                        <div class="absolute bottom-2 left-2 bg-white/80 text-[9px] text-slate-400 px-1.5 py-0.5 rounded font-mono">#{{ id }}</div>
-                    </div>
-                    <p class="text-[11px] font-bold truncate w-full text-center text-slate-600">
-                        {{ info.desc || '待标注' }}
-                    </p>
-
-                    <div class="overlay absolute inset-0 bg-white/80 flex flex-col items-center justify-center gap-2 p-4 rounded-3xl hidden lg:flex">
-                        <button @click.stop="copy(id, 'ID')" class="w-full py-2 bg-blue-500 text-white text-[10px] font-bold rounded-lg">复制 ID</button>
-                        <button v-if="info.url" @click.stop="copy(info.url, '链接')" class="w-full py-2 bg-slate-800 text-white text-[10px] font-bold rounded-lg">复制链接</button>
-                    </div>
-                </div>
-            </main>
-
-            <div v-else class="text-center py-20 font-bold text-slate-400 animate-pulse">加载中...</div>
-        </div>
-
-        <teleport to="body">
-            <transition name="fade">
-                <div v-if="preview.visible" class="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-6 backdrop-blur-md" @click.self="closePreview">
-                    <div class="bg-white rounded-[2rem] p-8 w-full max-w-sm shadow-2xl relative">
-                        <button @click="closePreview" class="absolute top-5 right-5 text-slate-400 p-2 bg-slate-100 rounded-full">✕</button>
-                        
-                        <div class="aspect-square flex items-center justify-center bg-slate-50 rounded-2xl mb-6 p-8">
-                            <img :src="preview.url" class="max-w-full max-h-full object-contain">
-                        </div>
-
-                        <div class="text-center mb-8">
-                            <span class="text-[10px] text-slate-400 font-mono bg-slate-100 px-2 py-1 rounded mb-2 inline-block">ID: {{ preview.id }}</span>
-                            <h3 class="text-xl font-black text-slate-800">{{ preview.desc || '待标注' }}</h3>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4">
-                            <button @click="copy(preview.id, 'ID')" class="py-4 bg-blue-600 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制 ID</button>
-                            <button @click="copy(preview.url, '链接')" class="py-4 bg-slate-900 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制链接</button>
-                        </div>
-                    </div>
-                </div>
-            </transition>
-        </teleport>
     </div>
 
     <script>
-        const { createApp, ref, onMounted, computed, reactive } = Vue;
-
+        const { createApp, ref } = Vue;
         createApp({
             setup() {
-                const currentPlatform = ref('tieba'); 
-                const searchQuery = ref('');
-                const rawData = ref({});
-                const loading = ref(true);
-                const preview = reactive({ visible: false, url: '', desc: '', id: '' });
+                // 修改为你实际的域名
+                const baseHost = ref('https://emoji.awkchan.top');
 
-                const loadData = async () => {
-                    loading.value = true;
-                    try {
-                        const res = await fetch(`./data/${currentPlatform.value}.json`);
-                        rawData.value = await res.json();
-                    } catch (err) { console.error(err); }
-                    loading.value = false;
-                };
+                const platforms = ref([
+                    { 
+                        id: 'tieba', 
+                        name: '百度贴吧', 
+                        path: 'tieba', 
+                        icon: '🐾', 
+                        bg: 'bg-blue-50',
+                        desc: '经典 image_emoticon 系列资源，提供高清 PNG 格式。' 
+                    },
+                    { 
+                        id: 'xhs', 
+                        name: '小红书', 
+                        path: 'rednote', 
+                        icon: '📕', 
+                        bg: 'bg-red-50',
+                        desc: '适配小红书最新表情包 ID 规范。' 
+                    },
+                    { 
+                        id: 'kuaishou', 
+                        name: '快手', 
+                        path: 'kuaishou', 
+                        icon: '🎥', 
+                        bg: 'bg-orange-50',
+                        desc: '快手平台动态表情静态化资源汇总。' 
+                    },
+                    { 
+                        id: 'heybox', 
+                        name: '小黑盒', 
+                        path: 'heybox', 
+                        icon: '📦', 
+                        bg: 'bg-zinc-100',
+                        desc: '小黑盒社区表情，适配游戏风格图标。' 
+                    }
+                ]);
 
-                const stats = computed(() => {
-                    const vals = Object.values(rawData.value);
-                    return { total: vals.length, hasResource: vals.filter(v => v.url).length };
-                });
-
-                const filteredFaces = computed(() => {
-                    const q = searchQuery.value.toLowerCase().trim();
-                    if (!q) return rawData.value;
-                    return Object.fromEntries(Object.entries(rawData.value).filter(([id, info]) => 
-                        id.toLowerCase().includes(q) || (info.desc && info.desc.toLowerCase().includes(q))
-                    ));
-                });
-
-                const openPreview = (info, id) => {
-                    if (!info.url) return;
-                    preview.url = info.url;
-                    preview.desc = info.desc;
-                    preview.id = id;
-                    preview.visible = true;
-                };
-
-                const closePreview = () => { preview.visible = false; };
-
-                const copy = (text, type) => {
-                    if (!text) return;
+                const copy = (text) => {
                     const el = document.createElement('textarea');
                     el.value = text;
                     document.body.appendChild(el);
                     el.select();
                     document.execCommand('copy');
                     document.body.removeChild(el);
-                    alert(type + ' 已复制');
+                    // 简单的反馈
+                    alert('接口格式已复制');
                 };
 
-                onMounted(loadData);
-                return { currentPlatform, searchQuery, filteredFaces, loading, stats, preview, openPreview, closePreview, copy };
+                return { baseHost, platforms, copy };
             }
         }).mount('#app');
     </script>

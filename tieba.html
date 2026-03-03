@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小红书表情</title>
+    <title>贴吧表情</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
@@ -48,9 +48,9 @@
             <header class="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
                 <div class="flex items-center gap-2 bg-slate-200 p-1.5 rounded-2xl w-full md:w-auto overflow-x-auto no-scrollbar">
                     <a href="index.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'tieba' ? 'bg-white shadow text-blue-600' : 'text-slate-500']">百度贴吧</a>
-                    <a href="xiaoheihe.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'xiaoheihe' ? 'bg-white shadow text-gray-600' : 'text-slate-500']">小黑盒</a>
+                    <a href="heybox.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'heybox' ? 'bg-white shadow text-gray-600' : 'text-slate-500']">小黑盒</a>
                     <a href="kuaishou.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'kuaishou' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">快手</a>
-                    <a href="xiaohongshu.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'xiaohongshu' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">小红书</a>
+                    <a href="rednote.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'rednote' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">小红书</a>
                 </div>
 
                 <div class="relative w-full md:w-80">
@@ -115,7 +115,7 @@
 
         createApp({
             setup() {
-                const currentPlatform = ref('xiaohongshu'); 
+                const currentPlatform = ref('tieba'); 
                 const searchQuery = ref('');
                 const rawData = ref({});
                 const loading = ref(true);

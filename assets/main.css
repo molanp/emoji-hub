@@ -1,0 +1,60 @@
+[v-cloak] {
+  display: none;
+}
+
+/* 电脑端悬浮显示遮罩 */
+@media (min-min-width: 1024px) {
+  .face-card:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+/* 移动端逻辑：点击卡片不应直接触发 overlay 里的复制，除非长按或特定交互 */
+/* 我们改为：点击卡片整体 = 预览；预览弹窗里提供复制 */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.image-loading {
+  background: #f1f5f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

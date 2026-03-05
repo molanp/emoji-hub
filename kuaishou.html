@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>快手表情大全 - Emoji Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <style>
-        [v-cloak] { display: none; }
-        /* 电脑端悬浮显示遮罩 */
-        @media (min-min-width: 1024px) {
-            .face-card:hover .overlay { opacity: 1; pointer-events: auto; }
-        }
-        .overlay { opacity: 0; pointer-events: none; transition: opacity 0.2s; }
-        
-        /* 移动端逻辑：点击卡片不应直接触发 overlay 里的复制，除非长按或特定交互 */
-        /* 我们改为：点击卡片整体 = 预览；预览弹窗里提供复制 */
-
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .fade-enter-active, .fade-leave-active { transition: opacity 0.3s ease; }
-        .fade-enter-from, .fade-leave-to { opacity: 0; }
-        
-        .image-loading { background: #f1f5f9; position: relative; overflow: hidden; }
-        .image-loading::after {
-            content: ""; position: absolute; inset: 0; transform: translateX(-100%);
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-            animation: shimmer 1.5s infinite;
-        }
-        @keyframes shimmer { 100% { transform: translateX(100%); } }
-    </style>
+    <script src="/assets/platform.js" defer></script>
+    <link rel="stylesheet" href="/assets/main.css" />
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
-    <div id="app" v-cloak>
+    <div id="app" v-cloak data-platform="kuaishou">
         <div class="max-w-7xl mx-auto px-4 py-6 md:py-10">
-            <div v-if="!loading" class="flex gap-4 mb-8">
+            <div v-if="!loading && !errorMsg" class="flex gap-4 mb-8">
                 <div class="bg-white border border-slate-200 px-5 py-3 rounded-2xl shadow-sm">
                     <span class="text-[10px] text-slate-400 block font-bold uppercase">Total</span>
                     <span class="text-2xl font-black text-slate-800">{{ stats.total }}</span>
@@ -46,128 +27,119 @@
             </div>
 
             <header class="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
-                <div class="flex items-center gap-2 bg-slate-200 p-1.5 rounded-2xl w-full md:w-auto overflow-x-auto no-scrollbar">
-                    <a href="tieba.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'tieba' ? 'bg-white shadow text-blue-600' : 'text-slate-500']">百度贴吧</a>
-                    <a href="heybox.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'heybox' ? 'bg-white shadow text-gray-600' : 'text-slate-500']">小黑盒</a>
-                    <a href="kuaishou.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'kuaishou' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">快手</a>
-                    <a href="rednote.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap', currentPlatform === 'rednote' ? 'bg-white shadow text-orange-600' : 'text-slate-500']">小红书</a>
+                <div
+                    class="flex items-center gap-2 bg-slate-200 p-1.5 rounded-2xl w-full md:w-auto overflow-x-auto no-scrollbar">
+                    <!-- 贴吧：主蓝色 -->
+                    <a href="tieba.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap',
+                                 currentPlatform === 'tieba'
+                                   ? 'bg-white shadow text-sky-600'
+                                   : 'text-slate-500']">百度贴吧</a>
+                    <!-- 小红书：红色 -->
+                    <a href="rednote.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap',
+                                 currentPlatform === 'rednote'
+                                   ? 'bg-white shadow text-red-500'
+                                   : 'text-slate-500']">小红书</a>
+                    <!-- 抖音：偏青+粉，取一个青色高亮 -->
+                    <a href="douyin.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap',
+                                 currentPlatform === 'douyin'
+                                   ? 'bg-white shadow text-cyan-500'
+                                   : 'text-slate-500']">抖音</a>
+                    <!-- 快手：橙色 -->
+                    <a href="kuaishou.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap',
+                                 currentPlatform === 'kuaishou'
+                                   ? 'bg-white shadow text-orange-500'
+                                   : 'text-slate-500']">快手</a>
+                    <!-- 小黑盒：深灰 -->
+                    <a href="heybox.html" :class="['px-6 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap',
+                                 currentPlatform === 'heybox'
+                                   ? 'bg-white shadow text-zinc-700'
+                                   : 'text-slate-500']">小黑盒</a>
                 </div>
 
                 <div class="relative w-full md:w-80">
-                    <input v-model="searchQuery" type="text" placeholder="搜索 ID 或 描述..." 
+                    <input v-model="searchQuery" type="text" placeholder="搜索 ID 或 描述..."
                         class="w-full px-5 py-3.5 bg-white rounded-2xl shadow-sm outline-none focus:ring-2 focus:ring-blue-400 transition-all">
                 </div>
             </header>
 
             <main v-if="!loading" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
-                <div 
-                    v-for="(info, id) in filteredFaces" 
-                    :key="id" 
-                    @click="openPreview(info, id)"
-                    class="face-card group relative bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center cursor-pointer transition-transform active:scale-95"
-                >
-                    <div class="aspect-square flex items-center justify-center relative mb-3 bg-slate-50 rounded-2xl w-full overflow-hidden">
-                        <img v-if="info.url" :src="info.url" loading="lazy" class="max-w-[80%] max-h-[80%] object-contain">
+                <div v-for="(info, id) in filteredFaces" :key="id" @click="openPreview(info, id)"
+                    class="face-card group relative bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center cursor-pointer transition-transform active:scale-95">
+                    <div
+                        class="aspect-square flex items-center justify-center relative mb-3 bg-slate-50 rounded-2xl w-full overflow-hidden">
+                        <img v-if="info.url" :src="info.url" loading="lazy"
+                            class="max-w-[80%] max-h-[80%] object-contain">
                         <div v-else class="text-[10px] text-slate-300 font-bold">无图</div>
-                        <div class="absolute bottom-2 left-2 bg-white/80 text-[9px] text-slate-400 px-1.5 py-0.5 rounded font-mono">#{{ id }}</div>
+                        <div
+                            class="absolute bottom-2 left-2 bg-white/80 text-[9px] text-slate-400 px-1.5 py-0.5 rounded font-mono">
+                            #{{ id }}</div>
                     </div>
                     <p class="text-[11px] font-bold truncate w-full text-center text-slate-600">
                         {{ info.desc || '待标注' }}
                     </p>
 
-                    <div class="overlay absolute inset-0 bg-white/80 flex flex-col items-center justify-center gap-2 p-4 rounded-3xl hidden lg:flex">
-                        <button @click.stop="copy(id, 'ID')" class="w-full py-2 bg-blue-500 text-white text-[10px] font-bold rounded-lg">复制 ID</button>
-                        <button v-if="info.url" @click.stop="copy(info.url, '链接')" class="w-full py-2 bg-slate-800 text-white text-[10px] font-bold rounded-lg">复制链接</button>
+                    <div
+                        class="overlay absolute inset-0 bg-white/80 flex flex-col items-center justify-center gap-2 p-4 rounded-3xl hidden lg:flex">
+                        <button @click.stop="copy(id, 'ID')"
+                            class="w-full py-2 bg-blue-500 text-white text-[10px] font-bold rounded-lg">复制 ID</button>
+                        <button v-if="info.url" @click.stop="copy(info.url, '链接')"
+                            class="w-full py-2 bg-slate-800 text-white text-[10px] font-bold rounded-lg">复制链接</button>
                     </div>
                 </div>
             </main>
 
-            <div v-else class="text-center py-20 font-bold text-slate-400 animate-pulse">加载中...</div>
+            <!-- 加载中：骨架占位 -->
+            <main v-if="loading" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <div v-for="n in 12" :key="n"
+                    class="face-card bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center">
+                    <div class="aspect-square w-full mb-3 rounded-2xl image-loading"></div>
+                    <div class="h-3 w-20 rounded-full bg-slate-100"></div>
+                </div>
+            </main>
+
+            <!-- 错误提示 -->
+            <div v-if="!loading && errorMsg"
+                class="text-center py-16 text-sm text-slate-400 flex flex-col items-center gap-4">
+                <div class="font-bold text-slate-500">{{ errorMsg }}</div>
+                <button @click="() => location.reload()"
+                    class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-900 text-white">
+                    刷新重试
+                </button>
+            </div>
         </div>
 
         <teleport to="body">
             <transition name="fade">
-                <div v-if="preview.visible" class="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-6 backdrop-blur-md" @click.self="closePreview">
+                <div v-if="preview.visible"
+                    class="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-6 backdrop-blur-md"
+                    @click.self="closePreview">
                     <div class="bg-white rounded-[2rem] p-8 w-full max-w-sm shadow-2xl relative">
-                        <button @click="closePreview" class="absolute top-5 right-5 text-slate-400 p-2 bg-slate-100 rounded-full">✕</button>
-                        
+                        <button @click="closePreview"
+                            class="absolute top-5 right-5 text-slate-400 p-2 bg-slate-100 rounded-full">✕</button>
+
                         <div class="aspect-square flex items-center justify-center bg-slate-50 rounded-2xl mb-6 p-8">
                             <img :src="preview.url" class="max-w-full max-h-full object-contain">
                         </div>
 
                         <div class="text-center mb-8">
-                            <span class="text-[10px] text-slate-400 font-mono bg-slate-100 px-2 py-1 rounded mb-2 inline-block">ID: {{ preview.id }}</span>
+                            <span
+                                class="text-[10px] text-slate-400 font-mono bg-slate-100 px-2 py-1 rounded mb-2 inline-block">ID:
+                                {{ preview.id }}</span>
                             <h3 class="text-xl font-black text-slate-800">{{ preview.desc || '待标注' }}</h3>
                         </div>
 
                         <div class="grid grid-cols-2 gap-4">
-                            <button @click="copy(preview.id, 'ID')" class="py-4 bg-blue-600 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制 ID</button>
-                            <button @click="copy(preview.url, '链接')" class="py-4 bg-slate-900 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制链接</button>
+                            <button @click="copy(preview.id, 'ID')"
+                                class="py-4 bg-blue-600 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制
+                                ID</button>
+                            <button @click="copy(preview.url, '链接')"
+                                class="py-4 bg-slate-900 text-white rounded-2xl font-bold text-sm active:scale-95 transition-transform">复制链接</button>
                         </div>
                     </div>
                 </div>
             </transition>
         </teleport>
     </div>
-
-    <script>
-        const { createApp, ref, onMounted, computed, reactive } = Vue;
-
-        createApp({
-            setup() {
-                const currentPlatform = ref('kuaishou'); 
-                const searchQuery = ref('');
-                const rawData = ref({});
-                const loading = ref(true);
-                const preview = reactive({ visible: false, url: '', desc: '', id: '' });
-
-                const loadData = async () => {
-                    loading.value = true;
-                    try {
-                        const res = await fetch(`./data/${currentPlatform.value}.json`);
-                        rawData.value = await res.json();
-                    } catch (err) { console.error(err); }
-                    loading.value = false;
-                };
-
-                const stats = computed(() => {
-                    const vals = Object.values(rawData.value);
-                    return { total: vals.length, hasResource: vals.filter(v => v.url).length };
-                });
-
-                const filteredFaces = computed(() => {
-                    const q = searchQuery.value.toLowerCase().trim();
-                    if (!q) return rawData.value;
-                    return Object.fromEntries(Object.entries(rawData.value).filter(([id, info]) => 
-                        id.toLowerCase().includes(q) || (info.desc && info.desc.toLowerCase().includes(q))
-                    ));
-                });
-
-                const openPreview = (info, id) => {
-                    if (!info.url) return;
-                    preview.url = info.url;
-                    preview.desc = info.desc;
-                    preview.id = id;
-                    preview.visible = true;
-                };
-
-                const closePreview = () => { preview.visible = false; };
-
-                const copy = (text, type) => {
-                    if (!text) return;
-                    const el = document.createElement('textarea');
-                    el.value = text;
-                    document.body.appendChild(el);
-                    el.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(el);
-                    alert(type + ' 已复制');
-                };
-
-                onMounted(loadData);
-                return { currentPlatform, searchQuery, filteredFaces, loading, stats, preview, openPreview, closePreview, copy };
-            }
-        }).mount('#app');
-    </script>
 </body>
+
 </html>

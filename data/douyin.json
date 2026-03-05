@@ -1,0 +1,1486 @@
+{
+  "鲸鱼点赞": {
+    "desc": "鲸鱼点赞",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼点赞.png"
+  },
+  "鲸鱼爱慕": {
+    "desc": "鲸鱼爱慕",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼爱慕.png"
+  },
+  "鲸鱼停机": {
+    "desc": "鲸鱼停机",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼停机.png"
+  },
+  "鲸鱼呲牙": {
+    "desc": "鲸鱼呲牙",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼呲牙.png"
+  },
+  "鲸鱼尬笑": {
+    "desc": "鲸鱼尬笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼尬笑.png"
+  },
+  "鲸鱼流泪": {
+    "desc": "鲸鱼流泪",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼流泪.png"
+  },
+  "鲸鱼捂脸": {
+    "desc": "鲸鱼捂脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/鲸鱼捂脸.png"
+  },
+  "过年牛": {
+    "desc": "过年牛",
+    "url": "https://emoji.awkchan.top/assets/douyin/过年牛.png"
+  },
+  "戴口罩": {
+    "desc": "戴口罩",
+    "url": "https://emoji.awkchan.top/assets/douyin/戴口罩.png"
+  },
+  "勤洗手": {
+    "desc": "勤洗手",
+    "url": "https://emoji.awkchan.top/assets/douyin/勤洗手.png"
+  },
+  "不信谣言": {
+    "desc": "不信谣言",
+    "url": "https://emoji.awkchan.top/assets/douyin/不信谣言.png"
+  },
+  "微笑": {
+    "desc": "微笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/微笑.png"
+  },
+  "色": {
+    "desc": "色",
+    "url": "https://emoji.awkchan.top/assets/douyin/色.png"
+  },
+  "爱慕": {
+    "desc": "爱慕",
+    "url": "https://emoji.awkchan.top/assets/douyin/爱慕.png"
+  },
+  "发呆": {
+    "desc": "发呆",
+    "url": "https://emoji.awkchan.top/assets/douyin/发呆.png"
+  },
+  "惊呆": {
+    "desc": "惊呆",
+    "url": "https://emoji.awkchan.top/assets/douyin/惊呆.png"
+  },
+  "酷拽": {
+    "desc": "酷拽",
+    "url": "https://emoji.awkchan.top/assets/douyin/酷拽.png"
+  },
+  "抠鼻": {
+    "desc": "抠鼻",
+    "url": "https://emoji.awkchan.top/assets/douyin/抠鼻.png"
+  },
+  "流泪": {
+    "desc": "流泪",
+    "url": "https://emoji.awkchan.top/assets/douyin/流泪.png"
+  },
+  "捂脸": {
+    "desc": "捂脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/捂脸.png"
+  },
+  "发怒": {
+    "desc": "发怒",
+    "url": "https://emoji.awkchan.top/assets/douyin/发怒.png"
+  },
+  "呲牙": {
+    "desc": "呲牙",
+    "url": "https://emoji.awkchan.top/assets/douyin/呲牙.png"
+  },
+  "尬笑": {
+    "desc": "尬笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/尬笑.png"
+  },
+  "睡": {
+    "desc": "睡",
+    "url": "https://emoji.awkchan.top/assets/douyin/睡.png"
+  },
+  "鼾睡": {
+    "desc": "鼾睡",
+    "url": "https://emoji.awkchan.top/assets/douyin/鼾睡.png"
+  },
+  "害羞": {
+    "desc": "害羞",
+    "url": "https://emoji.awkchan.top/assets/douyin/害羞.png"
+  },
+  "调皮": {
+    "desc": "调皮",
+    "url": "https://emoji.awkchan.top/assets/douyin/调皮.png"
+  },
+  "可爱": {
+    "desc": "可爱",
+    "url": "https://emoji.awkchan.top/assets/douyin/可爱.png"
+  },
+  "舔屏": {
+    "desc": "舔屏",
+    "url": "https://emoji.awkchan.top/assets/douyin/舔屏.png"
+  },
+  "看": {
+    "desc": "看",
+    "url": "https://emoji.awkchan.top/assets/douyin/看.png"
+  },
+  "爱心": {
+    "desc": "爱心",
+    "url": "https://emoji.awkchan.top/assets/douyin/爱心.png"
+  },
+  "比心": {
+    "desc": "比心",
+    "url": "https://emoji.awkchan.top/assets/douyin/比心.png"
+  },
+  "赞": {
+    "desc": "赞",
+    "url": "https://emoji.awkchan.top/assets/douyin/赞.png"
+  },
+  "鼓掌": {
+    "desc": "鼓掌",
+    "url": "https://emoji.awkchan.top/assets/douyin/鼓掌.png"
+  },
+  "感谢": {
+    "desc": "感谢",
+    "url": "https://emoji.awkchan.top/assets/douyin/感谢.png"
+  },
+  "祈祷": {
+    "desc": "祈祷",
+    "url": "https://emoji.awkchan.top/assets/douyin/祈祷.png"
+  },
+  "抱抱你": {
+    "desc": "抱抱你",
+    "url": "https://emoji.awkchan.top/assets/douyin/抱抱你.png"
+  },
+  "玫瑰": {
+    "desc": "玫瑰",
+    "url": "https://emoji.awkchan.top/assets/douyin/玫瑰.png"
+  },
+  "尴尬流汗": {
+    "desc": "尴尬流汗",
+    "url": "https://emoji.awkchan.top/assets/douyin/尴尬流汗.png"
+  },
+  "戳手手": {
+    "desc": "戳手手",
+    "url": "https://emoji.awkchan.top/assets/douyin/戳手手.png"
+  },
+  "星星眼": {
+    "desc": "星星眼",
+    "url": "https://emoji.awkchan.top/assets/douyin/星星眼.png"
+  },
+  "杀马特": {
+    "desc": "杀马特",
+    "url": "https://emoji.awkchan.top/assets/douyin/杀马特.png"
+  },
+  "黄脸干杯": {
+    "desc": "黄脸干杯",
+    "url": "https://emoji.awkchan.top/assets/douyin/黄脸干杯.png"
+  },
+  "抱紧自己": {
+    "desc": "抱紧自己",
+    "url": "https://emoji.awkchan.top/assets/douyin/抱紧自己.png"
+  },
+  "拜拜": {
+    "desc": "拜拜",
+    "url": "https://emoji.awkchan.top/assets/douyin/拜拜.png"
+  },
+  "热化了": {
+    "desc": "热化了",
+    "url": "https://emoji.awkchan.top/assets/douyin/热化了.png"
+  },
+  "黄脸祈祷": {
+    "desc": "黄脸祈祷",
+    "url": "https://emoji.awkchan.top/assets/douyin/黄脸祈祷.png"
+  },
+  "懵": {
+    "desc": "懵",
+    "url": "https://emoji.awkchan.top/assets/douyin/懵.png"
+  },
+  "举手": {
+    "desc": "举手",
+    "url": "https://emoji.awkchan.top/assets/douyin/举手.png"
+  },
+  "加功德": {
+    "desc": "加功德",
+    "url": "https://emoji.awkchan.top/assets/douyin/加功德.png"
+  },
+  "摊手": {
+    "desc": "摊手",
+    "url": "https://emoji.awkchan.top/assets/douyin/摊手.png"
+  },
+  "无语流汗": {
+    "desc": "无语流汗",
+    "url": "https://emoji.awkchan.top/assets/douyin/无语流汗.png"
+  },
+  "续火花吧": {
+    "desc": "续火花吧",
+    "url": "https://emoji.awkchan.top/assets/douyin/续火花吧.png"
+  },
+  "点火": {
+    "desc": "点火",
+    "url": "https://emoji.awkchan.top/assets/douyin/点火.png"
+  },
+  "哭哭": {
+    "desc": "哭哭",
+    "url": "https://emoji.awkchan.top/assets/douyin/哭哭.png"
+  },
+  "递花": {
+    "desc": "递花",
+    "url": "https://emoji.awkchan.top/assets/douyin/递花.png"
+  },
+  "点头哈腰": {
+    "desc": "点头哈腰",
+    "url": "https://emoji.awkchan.top/assets/douyin/点头哈腰.png"
+  },
+  "吐舌小狗": {
+    "desc": "吐舌小狗",
+    "url": "https://emoji.awkchan.top/assets/douyin/吐舌小狗.png"
+  },
+  "送花": {
+    "desc": "送花",
+    "url": "https://emoji.awkchan.top/assets/douyin/送花.png"
+  },
+  "爱心手": {
+    "desc": "爱心手",
+    "url": "https://emoji.awkchan.top/assets/douyin/爱心手.png"
+  },
+  "贴贴": {
+    "desc": "贴贴",
+    "url": "https://emoji.awkchan.top/assets/douyin/贴贴.png"
+  },
+  "灵机一动": {
+    "desc": "灵机一动",
+    "url": "https://emoji.awkchan.top/assets/douyin/灵机一动.png"
+  },
+  "灵光一闪": {
+    "desc": "灵光一闪",
+    "url": "https://emoji.awkchan.top/assets/douyin/灵光一闪.png"
+  },
+  "耶": {
+    "desc": "耶",
+    "url": "https://emoji.awkchan.top/assets/douyin/耶.png"
+  },
+  "打脸": {
+    "desc": "打脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/打脸.png"
+  },
+  "大笑": {
+    "desc": "大笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/大笑.png"
+  },
+  "机智": {
+    "desc": "机智",
+    "url": "https://emoji.awkchan.top/assets/douyin/机智.png"
+  },
+  "送心": {
+    "desc": "送心",
+    "url": "https://emoji.awkchan.top/assets/douyin/送心.png"
+  },
+  "666": {
+    "desc": "666",
+    "url": "https://emoji.awkchan.top/assets/douyin/666.png"
+  },
+  "闭嘴": {
+    "desc": "闭嘴",
+    "url": "https://emoji.awkchan.top/assets/douyin/闭嘴.png"
+  },
+  "来看我": {
+    "desc": "来看我",
+    "url": "https://emoji.awkchan.top/assets/douyin/来看我.png"
+  },
+  "一起加油": {
+    "desc": "一起加油",
+    "url": "https://emoji.awkchan.top/assets/douyin/一起加油.png"
+  },
+  "哈欠": {
+    "desc": "哈欠",
+    "url": "https://emoji.awkchan.top/assets/douyin/哈欠.png"
+  },
+  "震惊": {
+    "desc": "震惊",
+    "url": "https://emoji.awkchan.top/assets/douyin/震惊.png"
+  },
+  "晕": {
+    "desc": "晕",
+    "url": "https://emoji.awkchan.top/assets/douyin/晕.png"
+  },
+  "衰": {
+    "desc": "衰",
+    "url": "https://emoji.awkchan.top/assets/douyin/衰.png"
+  },
+  "困": {
+    "desc": "困",
+    "url": "https://emoji.awkchan.top/assets/douyin/困.png"
+  },
+  "疑问": {
+    "desc": "疑问",
+    "url": "https://emoji.awkchan.top/assets/douyin/疑问.png"
+  },
+  "what": {
+    "desc": "what",
+    "url": "https://emoji.awkchan.top/assets/douyin/what.png"
+  },
+  "泣不成声": {
+    "desc": "泣不成声",
+    "url": "https://emoji.awkchan.top/assets/douyin/泣不成声.png"
+  },
+  "小鼓掌": {
+    "desc": "小鼓掌",
+    "url": "https://emoji.awkchan.top/assets/douyin/小鼓掌.png"
+  },
+  "大金牙": {
+    "desc": "大金牙",
+    "url": "https://emoji.awkchan.top/assets/douyin/大金牙.png"
+  },
+  "偷笑": {
+    "desc": "偷笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/偷笑.png"
+  },
+  "石化": {
+    "desc": "石化",
+    "url": "https://emoji.awkchan.top/assets/douyin/石化.png"
+  },
+  "思考": {
+    "desc": "思考",
+    "url": "https://emoji.awkchan.top/assets/douyin/思考.png"
+  },
+  "吐血": {
+    "desc": "吐血",
+    "url": "https://emoji.awkchan.top/assets/douyin/吐血.png"
+  },
+  "可怜": {
+    "desc": "可怜",
+    "url": "https://emoji.awkchan.top/assets/douyin/可怜.png"
+  },
+  "嘘": {
+    "desc": "嘘",
+    "url": "https://emoji.awkchan.top/assets/douyin/嘘.png"
+  },
+  "撇嘴": {
+    "desc": "撇嘴",
+    "url": "https://emoji.awkchan.top/assets/douyin/撇嘴.png"
+  },
+  "尴尬": {
+    "desc": "尴尬",
+    "url": "https://emoji.awkchan.top/assets/douyin/尴尬.png"
+  },
+  "黑线": {
+    "desc": "黑线",
+    "url": "https://emoji.awkchan.top/assets/douyin/黑线.png"
+  },
+  "笑哭": {
+    "desc": "笑哭",
+    "url": "https://emoji.awkchan.top/assets/douyin/笑哭.png"
+  },
+  "生病": {
+    "desc": "生病",
+    "url": "https://emoji.awkchan.top/assets/douyin/生病.png"
+  },
+  "雾霾": {
+    "desc": "雾霾",
+    "url": "https://emoji.awkchan.top/assets/douyin/雾霾.png"
+  },
+  "奸笑": {
+    "desc": "奸笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/奸笑.png"
+  },
+  "得意": {
+    "desc": "得意",
+    "url": "https://emoji.awkchan.top/assets/douyin/得意.png"
+  },
+  "憨笑": {
+    "desc": "憨笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/憨笑.png"
+  },
+  "坏笑": {
+    "desc": "坏笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/坏笑.png"
+  },
+  "抓狂": {
+    "desc": "抓狂",
+    "url": "https://emoji.awkchan.top/assets/douyin/抓狂.png"
+  },
+  "泪奔": {
+    "desc": "泪奔",
+    "url": "https://emoji.awkchan.top/assets/douyin/泪奔.png"
+  },
+  "钱": {
+    "desc": "钱",
+    "url": "https://emoji.awkchan.top/assets/douyin/钱.png"
+  },
+  "亲亲": {
+    "desc": "亲亲",
+    "url": "https://emoji.awkchan.top/assets/douyin/亲亲.png"
+  },
+  "吻": {
+    "desc": "吻",
+    "url": "https://emoji.awkchan.top/assets/douyin/吻.png"
+  },
+  "恐惧": {
+    "desc": "恐惧",
+    "url": "https://emoji.awkchan.top/assets/douyin/恐惧.png"
+  },
+  "愉快": {
+    "desc": "愉快",
+    "url": "https://emoji.awkchan.top/assets/douyin/愉快.png"
+  },
+  "笑": {
+    "desc": "笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/笑.png"
+  },
+  "快哭了": {
+    "desc": "快哭了",
+    "url": "https://emoji.awkchan.top/assets/douyin/快哭了.png"
+  },
+  "翻白眼": {
+    "desc": "翻白眼",
+    "url": "https://emoji.awkchan.top/assets/douyin/翻白眼.png"
+  },
+  "傲慢": {
+    "desc": "傲慢",
+    "url": "https://emoji.awkchan.top/assets/douyin/傲慢.png"
+  },
+  "互粉": {
+    "desc": "互粉",
+    "url": "https://emoji.awkchan.top/assets/douyin/互粉.png"
+  },
+  "我想静静": {
+    "desc": "我想静静",
+    "url": "https://emoji.awkchan.top/assets/douyin/我想静静.png"
+  },
+  "委屈": {
+    "desc": "委屈",
+    "url": "https://emoji.awkchan.top/assets/douyin/委屈.png"
+  },
+  "鄙视": {
+    "desc": "鄙视",
+    "url": "https://emoji.awkchan.top/assets/douyin/鄙视.png"
+  },
+  "飞吻": {
+    "desc": "飞吻",
+    "url": "https://emoji.awkchan.top/assets/douyin/飞吻.png"
+  },
+  "再见": {
+    "desc": "再见",
+    "url": "https://emoji.awkchan.top/assets/douyin/再见.png"
+  },
+  "紫薇别走": {
+    "desc": "紫薇别走",
+    "url": "https://emoji.awkchan.top/assets/douyin/紫薇别走.png"
+  },
+  "听歌": {
+    "desc": "听歌",
+    "url": "https://emoji.awkchan.top/assets/douyin/听歌.png"
+  },
+  "拥抱": {
+    "desc": "拥抱",
+    "url": "https://emoji.awkchan.top/assets/douyin/拥抱.png"
+  },
+  "求抱抱": {
+    "desc": "求抱抱",
+    "url": "https://emoji.awkchan.top/assets/douyin/求抱抱.png"
+  },
+  "绝望的凝视": {
+    "desc": "绝望的凝视",
+    "url": "https://emoji.awkchan.top/assets/douyin/绝望的凝视.png"
+  },
+  "不失礼貌的微笑": {
+    "desc": "不失礼貌的微笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/不失礼貌的微笑.png"
+  },
+  "不看": {
+    "desc": "不看",
+    "url": "https://emoji.awkchan.top/assets/douyin/不看.png"
+  },
+  "裂开": {
+    "desc": "裂开",
+    "url": "https://emoji.awkchan.top/assets/douyin/裂开.png"
+  },
+  "干饭人": {
+    "desc": "干饭人",
+    "url": "https://emoji.awkchan.top/assets/douyin/干饭人.png"
+  },
+  "庆祝": {
+    "desc": "庆祝",
+    "url": "https://emoji.awkchan.top/assets/douyin/庆祝.png"
+  },
+  "吐舌": {
+    "desc": "吐舌",
+    "url": "https://emoji.awkchan.top/assets/douyin/吐舌.png"
+  },
+  "呆无辜": {
+    "desc": "呆无辜",
+    "url": "https://emoji.awkchan.top/assets/douyin/呆无辜.png"
+  },
+  "白眼": {
+    "desc": "白眼",
+    "url": "https://emoji.awkchan.top/assets/douyin/白眼.png"
+  },
+  "熊吉": {
+    "desc": "熊吉",
+    "url": "https://emoji.awkchan.top/assets/douyin/熊吉.png"
+  },
+  "猪头": {
+    "desc": "猪头",
+    "url": "https://emoji.awkchan.top/assets/douyin/猪头.png"
+  },
+  "冷漠": {
+    "desc": "冷漠",
+    "url": "https://emoji.awkchan.top/assets/douyin/冷漠.png"
+  },
+  "微笑袋鼠": {
+    "desc": "微笑袋鼠",
+    "url": "https://emoji.awkchan.top/assets/douyin/微笑袋鼠.png"
+  },
+  "凝视": {
+    "desc": "凝视",
+    "url": "https://emoji.awkchan.top/assets/douyin/凝视.png"
+  },
+  "暗中观察": {
+    "desc": "暗中观察",
+    "url": "https://emoji.awkchan.top/assets/douyin/暗中观察.png"
+  },
+  "二哈": {
+    "desc": "二哈",
+    "url": "https://emoji.awkchan.top/assets/douyin/二哈.png"
+  },
+  "菜狗": {
+    "desc": "菜狗",
+    "url": "https://emoji.awkchan.top/assets/douyin/菜狗.png"
+  },
+  "骷髅": {
+    "desc": "骷髅",
+    "url": "https://emoji.awkchan.top/assets/douyin/骷髅.png"
+  },
+  "黑脸": {
+    "desc": "黑脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/黑脸.png"
+  },
+  "展开说说": {
+    "desc": "展开说说",
+    "url": "https://emoji.awkchan.top/assets/douyin/展开说说.png"
+  },
+  "蜜蜂狗": {
+    "desc": "蜜蜂狗",
+    "url": "https://emoji.awkchan.top/assets/douyin/蜜蜂狗.png"
+  },
+  "柴犬": {
+    "desc": "柴犬",
+    "url": "https://emoji.awkchan.top/assets/douyin/柴犬.png"
+  },
+  "流汗": {
+    "desc": "流汗",
+    "url": "https://emoji.awkchan.top/assets/douyin/流汗.png"
+  },
+  "汗": {
+    "desc": "汗",
+    "url": "https://emoji.awkchan.top/assets/douyin/汗.png"
+  },
+  "摸头": {
+    "desc": "摸头",
+    "url": "https://emoji.awkchan.top/assets/douyin/摸头.png"
+  },
+  "皱眉": {
+    "desc": "皱眉",
+    "url": "https://emoji.awkchan.top/assets/douyin/皱眉.png"
+  },
+  "擦汗": {
+    "desc": "擦汗",
+    "url": "https://emoji.awkchan.top/assets/douyin/擦汗.png"
+  },
+  "红脸": {
+    "desc": "红脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/红脸.png"
+  },
+  "做鬼脸": {
+    "desc": "做鬼脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/做鬼脸.png"
+  },
+  "强": {
+    "desc": "强",
+    "url": "https://emoji.awkchan.top/assets/douyin/强.png"
+  },
+  "如花": {
+    "desc": "如花",
+    "url": "https://emoji.awkchan.top/assets/douyin/如花.png"
+  },
+  "吐": {
+    "desc": "吐",
+    "url": "https://emoji.awkchan.top/assets/douyin/吐.png"
+  },
+  "惊喜": {
+    "desc": "惊喜",
+    "url": "https://emoji.awkchan.top/assets/douyin/惊喜.png"
+  },
+  "敲打": {
+    "desc": "敲打",
+    "url": "https://emoji.awkchan.top/assets/douyin/敲打.png"
+  },
+  "奋斗": {
+    "desc": "奋斗",
+    "url": "https://emoji.awkchan.top/assets/douyin/奋斗.png"
+  },
+  "吐彩虹": {
+    "desc": "吐彩虹",
+    "url": "https://emoji.awkchan.top/assets/douyin/吐彩虹.png"
+  },
+  "大哭": {
+    "desc": "大哭",
+    "url": "https://emoji.awkchan.top/assets/douyin/大哭.png"
+  },
+  "嘿哈": {
+    "desc": "嘿哈",
+    "url": "https://emoji.awkchan.top/assets/douyin/嘿哈.png"
+  },
+  "加好友": {
+    "desc": "加好友",
+    "url": "https://emoji.awkchan.top/assets/douyin/加好友.png"
+  },
+  "惊恐": {
+    "desc": "惊恐",
+    "url": "https://emoji.awkchan.top/assets/douyin/惊恐.png"
+  },
+  "惊讶": {
+    "desc": "惊讶",
+    "url": "https://emoji.awkchan.top/assets/douyin/惊讶.png"
+  },
+  "囧": {
+    "desc": "囧",
+    "url": "https://emoji.awkchan.top/assets/douyin/囧.png"
+  },
+  "难过": {
+    "desc": "难过",
+    "url": "https://emoji.awkchan.top/assets/douyin/难过.png"
+  },
+  "斜眼": {
+    "desc": "斜眼",
+    "url": "https://emoji.awkchan.top/assets/douyin/斜眼.png"
+  },
+  "阴险": {
+    "desc": "阴险",
+    "url": "https://emoji.awkchan.top/assets/douyin/阴险.png"
+  },
+  "左哼哼": {
+    "desc": "左哼哼",
+    "url": "https://emoji.awkchan.top/assets/douyin/左哼哼.png"
+  },
+  "右哼哼": {
+    "desc": "右哼哼",
+    "url": "https://emoji.awkchan.top/assets/douyin/右哼哼.png"
+  },
+  "悠闲": {
+    "desc": "悠闲",
+    "url": "https://emoji.awkchan.top/assets/douyin/悠闲.png"
+  },
+  "咒骂": {
+    "desc": "咒骂",
+    "url": "https://emoji.awkchan.top/assets/douyin/咒骂.png"
+  },
+  "吃瓜群众": {
+    "desc": "吃瓜群众",
+    "url": "https://emoji.awkchan.top/assets/douyin/吃瓜群众.png"
+  },
+  "绿帽子": {
+    "desc": "绿帽子",
+    "url": "https://emoji.awkchan.top/assets/douyin/绿帽子.png"
+  },
+  "真的会谢": {
+    "desc": "真的会谢",
+    "url": "https://emoji.awkchan.top/assets/douyin/真的会谢.png"
+  },
+  "达咩": {
+    "desc": "达咩",
+    "url": "https://emoji.awkchan.top/assets/douyin/达咩.png"
+  },
+  "敢怒不敢言": {
+    "desc": "敢怒不敢言",
+    "url": "https://emoji.awkchan.top/assets/douyin/敢怒不敢言.png"
+  },
+  "投降": {
+    "desc": "投降",
+    "url": "https://emoji.awkchan.top/assets/douyin/投降.png"
+  },
+  "求求了": {
+    "desc": "求求了",
+    "url": "https://emoji.awkchan.top/assets/douyin/求求了.png"
+  },
+  "眼含热泪": {
+    "desc": "眼含热泪",
+    "url": "https://emoji.awkchan.top/assets/douyin/眼含热泪.png"
+  },
+  "叹气": {
+    "desc": "叹气",
+    "url": "https://emoji.awkchan.top/assets/douyin/叹气.png"
+  },
+  "好开心": {
+    "desc": "好开心",
+    "url": "https://emoji.awkchan.top/assets/douyin/好开心.png"
+  },
+  "不是吧": {
+    "desc": "不是吧",
+    "url": "https://emoji.awkchan.top/assets/douyin/不是吧.png"
+  },
+  "动动脑子": {
+    "desc": "动动脑子",
+    "url": "https://emoji.awkchan.top/assets/douyin/动动脑子.png"
+  },
+  "表面微笑": {
+    "desc": "表面微笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/表面微笑.png"
+  },
+  "表面呲牙": {
+    "desc": "表面呲牙",
+    "url": "https://emoji.awkchan.top/assets/douyin/表面呲牙.png"
+  },
+  "鞠躬": {
+    "desc": "鞠躬",
+    "url": "https://emoji.awkchan.top/assets/douyin/鞠躬.png"
+  },
+  "躺平": {
+    "desc": "躺平",
+    "url": "https://emoji.awkchan.top/assets/douyin/躺平.png"
+  },
+  "九转大肠": {
+    "desc": "九转大肠",
+    "url": "https://emoji.awkchan.top/assets/douyin/九转大肠.png"
+  },
+  "敲木鱼": {
+    "desc": "敲木鱼",
+    "url": "https://emoji.awkchan.top/assets/douyin/敲木鱼.png"
+  },
+  "不你不想": {
+    "desc": "不你不想",
+    "url": "https://emoji.awkchan.top/assets/douyin/不你不想.png"
+  },
+  "一头乱麻": {
+    "desc": "一头乱麻",
+    "url": "https://emoji.awkchan.top/assets/douyin/一头乱麻.png"
+  },
+  "kisskiss": {
+    "desc": "kisskiss",
+    "url": "https://emoji.awkchan.top/assets/douyin/kisskiss.png"
+  },
+  "你不大行": {
+    "desc": "你不大行",
+    "url": "https://emoji.awkchan.top/assets/douyin/你不大行.png"
+  },
+  "噢买尬": {
+    "desc": "噢买尬",
+    "url": "https://emoji.awkchan.top/assets/douyin/噢买尬.png"
+  },
+  "宕机": {
+    "desc": "宕机",
+    "url": "https://emoji.awkchan.top/assets/douyin/宕机.png"
+  },
+  "还得是我": {
+    "desc": "还得是我",
+    "url": "https://emoji.awkchan.top/assets/douyin/还得是我.png"
+  },
+  "6": {
+    "desc": "6",
+    "url": "https://emoji.awkchan.top/assets/douyin/6.png"
+  },
+  "脸疼": {
+    "desc": "脸疼",
+    "url": "https://emoji.awkchan.top/assets/douyin/脸疼.png"
+  },
+  "他急了": {
+    "desc": "他急了",
+    "url": "https://emoji.awkchan.top/assets/douyin/他急了.png"
+  },
+  "苦涩": {
+    "desc": "苦涩",
+    "url": "https://emoji.awkchan.top/assets/douyin/苦涩.png"
+  },
+  "逞强落泪": {
+    "desc": "逞强落泪",
+    "url": "https://emoji.awkchan.top/assets/douyin/逞强落泪.png"
+  },
+  "求机位-黄脸": {
+    "desc": "求机位-黄脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/求机位-黄脸.png"
+  },
+  "求机位1": {
+    "desc": "求机位1",
+    "url": "https://emoji.awkchan.top/assets/douyin/求机位1.png"
+  },
+  "求机位2": {
+    "desc": "求机位2",
+    "url": "https://emoji.awkchan.top/assets/douyin/求机位2.png"
+  },
+  "求机位3": {
+    "desc": "求机位3",
+    "url": "https://emoji.awkchan.top/assets/douyin/求机位3.png"
+  },
+  "求机位-ip": {
+    "desc": "求机位-ip",
+    "url": "https://emoji.awkchan.top/assets/douyin/求机位-ip.png"
+  },
+  "助威": {
+    "desc": "助威",
+    "url": "https://emoji.awkchan.top/assets/douyin/助威.png"
+  },
+  "夺金": {
+    "desc": "夺金",
+    "url": "https://emoji.awkchan.top/assets/douyin/夺金.png"
+  },
+  "点赞": {
+    "desc": "点赞",
+    "url": "https://emoji.awkchan.top/assets/douyin/点赞.png"
+  },
+  "细糠": {
+    "desc": "细糠",
+    "url": "https://emoji.awkchan.top/assets/douyin/细糠.png"
+  },
+  "精选": {
+    "desc": "精选",
+    "url": "https://emoji.awkchan.top/assets/douyin/精选.png"
+  },
+  "买买买": {
+    "desc": "买买买",
+    "url": "https://emoji.awkchan.top/assets/douyin/买买买.png"
+  },
+  "好想要": {
+    "desc": "好想要",
+    "url": "https://emoji.awkchan.top/assets/douyin/好想要.png"
+  },
+  "含泪剁手": {
+    "desc": "含泪剁手",
+    "url": "https://emoji.awkchan.top/assets/douyin/含泪剁手.png"
+  },
+  "带我去": {
+    "desc": "带我去",
+    "url": "https://emoji.awkchan.top/assets/douyin/带我去.png"
+  },
+  "好想吃": {
+    "desc": "好想吃",
+    "url": "https://emoji.awkchan.top/assets/douyin/好想吃.png"
+  },
+  "安排": {
+    "desc": "安排",
+    "url": "https://emoji.awkchan.top/assets/douyin/安排.png"
+  },
+  "码住": {
+    "desc": "码住",
+    "url": "https://emoji.awkchan.top/assets/douyin/码住.png"
+  },
+  "种草": {
+    "desc": "种草",
+    "url": "https://emoji.awkchan.top/assets/douyin/种草.png"
+  },
+  "上链接": {
+    "desc": "上链接",
+    "url": "https://emoji.awkchan.top/assets/douyin/上链接.png"
+  },
+  "强壮": {
+    "desc": "强壮",
+    "url": "https://emoji.awkchan.top/assets/douyin/强壮.png"
+  },
+  "加油": {
+    "desc": "加油",
+    "url": "https://emoji.awkchan.top/assets/douyin/加油.png"
+  },
+  "碰拳": {
+    "desc": "碰拳",
+    "url": "https://emoji.awkchan.top/assets/douyin/碰拳.png"
+  },
+  "OK": {
+    "desc": "OK",
+    "url": "https://emoji.awkchan.top/assets/douyin/OK.png"
+  },
+  "ok": {
+    "desc": "ok",
+    "url": "https://emoji.awkchan.top/assets/douyin/ok.png"
+  },
+  "击掌": {
+    "desc": "击掌",
+    "url": "https://emoji.awkchan.top/assets/douyin/击掌.png"
+  },
+  "左上": {
+    "desc": "左上",
+    "url": "https://emoji.awkchan.top/assets/douyin/左上.png"
+  },
+  "握手": {
+    "desc": "握手",
+    "url": "https://emoji.awkchan.top/assets/douyin/握手.png"
+  },
+  "抱拳": {
+    "desc": "抱拳",
+    "url": "https://emoji.awkchan.top/assets/douyin/抱拳.png"
+  },
+  "勾引": {
+    "desc": "勾引",
+    "url": "https://emoji.awkchan.top/assets/douyin/勾引.png"
+  },
+  "拳头": {
+    "desc": "拳头",
+    "url": "https://emoji.awkchan.top/assets/douyin/拳头.png"
+  },
+  "弱": {
+    "desc": "弱",
+    "url": "https://emoji.awkchan.top/assets/douyin/弱.png"
+  },
+  "胜利": {
+    "desc": "胜利",
+    "url": "https://emoji.awkchan.top/assets/douyin/胜利.png"
+  },
+  "右边": {
+    "desc": "右边",
+    "url": "https://emoji.awkchan.top/assets/douyin/右边.png"
+  },
+  "左边": {
+    "desc": "左边",
+    "url": "https://emoji.awkchan.top/assets/douyin/左边.png"
+  },
+  "足球": {
+    "desc": "足球",
+    "url": "https://emoji.awkchan.top/assets/douyin/足球.png"
+  },
+  "球鞋": {
+    "desc": "球鞋",
+    "url": "https://emoji.awkchan.top/assets/douyin/球鞋.png"
+  },
+  "手套": {
+    "desc": "手套",
+    "url": "https://emoji.awkchan.top/assets/douyin/手套.png"
+  },
+  "亚运鼓掌": {
+    "desc": "亚运鼓掌",
+    "url": "https://emoji.awkchan.top/assets/douyin/亚运鼓掌.png"
+  },
+  "金牌": {
+    "desc": "金牌",
+    "url": "https://emoji.awkchan.top/assets/douyin/金牌.png"
+  },
+  "手花": {
+    "desc": "手花",
+    "url": "https://emoji.awkchan.top/assets/douyin/手花.png"
+  },
+  "嘴唇": {
+    "desc": "嘴唇",
+    "url": "https://emoji.awkchan.top/assets/douyin/嘴唇.png"
+  },
+  "kiss": {
+    "desc": "kiss",
+    "url": "https://emoji.awkchan.top/assets/douyin/kiss.png"
+  },
+  "心碎": {
+    "desc": "心碎",
+    "url": "https://emoji.awkchan.top/assets/douyin/心碎.png"
+  },
+  "凋谢": {
+    "desc": "凋谢",
+    "url": "https://emoji.awkchan.top/assets/douyin/凋谢.png"
+  },
+  "愤怒": {
+    "desc": "愤怒",
+    "url": "https://emoji.awkchan.top/assets/douyin/愤怒.png"
+  },
+  "垃圾": {
+    "desc": "垃圾",
+    "url": "https://emoji.awkchan.top/assets/douyin/垃圾.png"
+  },
+  "啤酒": {
+    "desc": "啤酒",
+    "url": "https://emoji.awkchan.top/assets/douyin/啤酒.png"
+  },
+  "咖啡": {
+    "desc": "咖啡",
+    "url": "https://emoji.awkchan.top/assets/douyin/咖啡.png"
+  },
+  "蛋糕": {
+    "desc": "蛋糕",
+    "url": "https://emoji.awkchan.top/assets/douyin/蛋糕.png"
+  },
+  "礼物": {
+    "desc": "礼物",
+    "url": "https://emoji.awkchan.top/assets/douyin/礼物.png"
+  },
+  "撒花": {
+    "desc": "撒花",
+    "url": "https://emoji.awkchan.top/assets/douyin/撒花.png"
+  },
+  "加一": {
+    "desc": "加一",
+    "url": "https://emoji.awkchan.top/assets/douyin/加一.png"
+  },
+  "减一": {
+    "desc": "减一",
+    "url": "https://emoji.awkchan.top/assets/douyin/减一.png"
+  },
+  "okk": {
+    "desc": "okk",
+    "url": "https://emoji.awkchan.top/assets/douyin/okk.png"
+  },
+  "V5": {
+    "desc": "V5",
+    "url": "https://emoji.awkchan.top/assets/douyin/V5.png"
+  },
+  "绝": {
+    "desc": "绝",
+    "url": "https://emoji.awkchan.top/assets/douyin/绝.png"
+  },
+  "给力": {
+    "desc": "给力",
+    "url": "https://emoji.awkchan.top/assets/douyin/给力.png"
+  },
+  "yes": {
+    "desc": "yes",
+    "url": "https://emoji.awkchan.top/assets/douyin/yes.png"
+  },
+  "no": {
+    "desc": "no",
+    "url": "https://emoji.awkchan.top/assets/douyin/no.png"
+  },
+  "红包": {
+    "desc": "红包",
+    "url": "https://emoji.awkchan.top/assets/douyin/红包.png"
+  },
+  "屎": {
+    "desc": "屎",
+    "url": "https://emoji.awkchan.top/assets/douyin/屎.png"
+  },
+  "发": {
+    "desc": "发",
+    "url": "https://emoji.awkchan.top/assets/douyin/发.png"
+  },
+  "我太难了": {
+    "desc": "我太难了",
+    "url": "https://emoji.awkchan.top/assets/douyin/我太难了.png"
+  },
+  "18禁": {
+    "desc": "18禁",
+    "url": "https://emoji.awkchan.top/assets/douyin/18禁.png"
+  },
+  "炸弹": {
+    "desc": "炸弹",
+    "url": "https://emoji.awkchan.top/assets/douyin/炸弹.png"
+  },
+  "去污粉": {
+    "desc": "去污粉",
+    "url": "https://emoji.awkchan.top/assets/douyin/去污粉.png"
+  },
+  "西瓜": {
+    "desc": "西瓜",
+    "url": "https://emoji.awkchan.top/assets/douyin/西瓜.png"
+  },
+  "菜刀": {
+    "desc": "菜刀",
+    "url": "https://emoji.awkchan.top/assets/douyin/菜刀.png"
+  },
+  "刀": {
+    "desc": "刀",
+    "url": "https://emoji.awkchan.top/assets/douyin/刀.png"
+  },
+  "心": {
+    "desc": "心",
+    "url": "https://emoji.awkchan.top/assets/douyin/心.png"
+  },
+  "伤心": {
+    "desc": "伤心",
+    "url": "https://emoji.awkchan.top/assets/douyin/伤心.png"
+  },
+  "便便": {
+    "desc": "便便",
+    "url": "https://emoji.awkchan.top/assets/douyin/便便.png"
+  },
+  "加鸡腿": {
+    "desc": "加鸡腿",
+    "url": "https://emoji.awkchan.top/assets/douyin/加鸡腿.png"
+  },
+  "我酸了": {
+    "desc": "我酸了",
+    "url": "https://emoji.awkchan.top/assets/douyin/我酸了.png"
+  },
+  "握爪": {
+    "desc": "握爪",
+    "url": "https://emoji.awkchan.top/assets/douyin/握爪.png"
+  },
+  "太阳": {
+    "desc": "太阳",
+    "url": "https://emoji.awkchan.top/assets/douyin/太阳.png"
+  },
+  "月亮": {
+    "desc": "月亮",
+    "url": "https://emoji.awkchan.top/assets/douyin/月亮.png"
+  },
+  "给跪了": {
+    "desc": "给跪了",
+    "url": "https://emoji.awkchan.top/assets/douyin/给跪了.png"
+  },
+  "蕉绿": {
+    "desc": "蕉绿",
+    "url": "https://emoji.awkchan.top/assets/douyin/蕉绿.png"
+  },
+  "扎心": {
+    "desc": "扎心",
+    "url": "https://emoji.awkchan.top/assets/douyin/扎心.png"
+  },
+  "胡瓜": {
+    "desc": "胡瓜",
+    "url": "https://emoji.awkchan.top/assets/douyin/胡瓜.png"
+  },
+  "yyds": {
+    "desc": "yyds",
+    "url": "https://emoji.awkchan.top/assets/douyin/yyds.png"
+  },
+  "emo": {
+    "desc": "emo",
+    "url": "https://emoji.awkchan.top/assets/douyin/emo.png"
+  },
+  "开心兔": {
+    "desc": "开心兔",
+    "url": "https://emoji.awkchan.top/assets/douyin/开心兔.png"
+  },
+  "招财兔": {
+    "desc": "招财兔",
+    "url": "https://emoji.awkchan.top/assets/douyin/招财兔.png"
+  },
+  "年兽兔": {
+    "desc": "年兽兔",
+    "url": "https://emoji.awkchan.top/assets/douyin/年兽兔.png"
+  },
+  "打call": {
+    "desc": "打call",
+    "url": "https://emoji.awkchan.top/assets/douyin/打call.png"
+  },
+  "栓Q": {
+    "desc": "栓Q",
+    "url": "https://emoji.awkchan.top/assets/douyin/栓Q.png"
+  },
+  "无语": {
+    "desc": "无语",
+    "url": "https://emoji.awkchan.top/assets/douyin/无语.png"
+  },
+  "雪人": {
+    "desc": "雪人",
+    "url": "https://emoji.awkchan.top/assets/douyin/雪人.png"
+  },
+  "雪花": {
+    "desc": "雪花",
+    "url": "https://emoji.awkchan.top/assets/douyin/雪花.png"
+  },
+  "圣诞树": {
+    "desc": "圣诞树",
+    "url": "https://emoji.awkchan.top/assets/douyin/圣诞树.png"
+  },
+  "平安果": {
+    "desc": "平安果",
+    "url": "https://emoji.awkchan.top/assets/douyin/平安果.png"
+  },
+  "圣诞帽": {
+    "desc": "圣诞帽",
+    "url": "https://emoji.awkchan.top/assets/douyin/圣诞帽.png"
+  },
+  "气球": {
+    "desc": "气球",
+    "url": "https://emoji.awkchan.top/assets/douyin/气球.png"
+  },
+  "干杯": {
+    "desc": "干杯",
+    "url": "https://emoji.awkchan.top/assets/douyin/干杯.png"
+  },
+  "烟花": {
+    "desc": "烟花",
+    "url": "https://emoji.awkchan.top/assets/douyin/烟花.png"
+  },
+  "福": {
+    "desc": "福",
+    "url": "https://emoji.awkchan.top/assets/douyin/福.png"
+  },
+  "candy": {
+    "desc": "candy",
+    "url": "https://emoji.awkchan.top/assets/douyin/candy.png"
+  },
+  "糖葫芦": {
+    "desc": "糖葫芦",
+    "url": "https://emoji.awkchan.top/assets/douyin/糖葫芦.png"
+  },
+  "虎头": {
+    "desc": "虎头",
+    "url": "https://emoji.awkchan.top/assets/douyin/虎头.png"
+  },
+  "饺子": {
+    "desc": "饺子",
+    "url": "https://emoji.awkchan.top/assets/douyin/饺子.png"
+  },
+  "鞭炮": {
+    "desc": "鞭炮",
+    "url": "https://emoji.awkchan.top/assets/douyin/鞭炮.png"
+  },
+  "元宝": {
+    "desc": "元宝",
+    "url": "https://emoji.awkchan.top/assets/douyin/元宝.png"
+  },
+  "灯笼": {
+    "desc": "灯笼",
+    "url": "https://emoji.awkchan.top/assets/douyin/灯笼.png"
+  },
+  "锦鲤": {
+    "desc": "锦鲤",
+    "url": "https://emoji.awkchan.top/assets/douyin/锦鲤.png"
+  },
+  "巧克力": {
+    "desc": "巧克力",
+    "url": "https://emoji.awkchan.top/assets/douyin/巧克力.png"
+  },
+  "汤圆": {
+    "desc": "汤圆",
+    "url": "https://emoji.awkchan.top/assets/douyin/汤圆.png"
+  },
+  "情书": {
+    "desc": "情书",
+    "url": "https://emoji.awkchan.top/assets/douyin/情书.png"
+  },
+  "iloveyou": {
+    "desc": "iloveyou",
+    "url": "https://emoji.awkchan.top/assets/douyin/iloveyou.png"
+  },
+  "戒指": {
+    "desc": "戒指",
+    "url": "https://emoji.awkchan.top/assets/douyin/戒指.png"
+  },
+  "派对": {
+    "desc": "派对",
+    "url": "https://emoji.awkchan.top/assets/douyin/派对.png"
+  },
+  "过年鼠": {
+    "desc": "过年鼠",
+    "url": "https://emoji.awkchan.top/assets/douyin/过年鼠.png"
+  },
+  "小黄鸭": {
+    "desc": "小黄鸭",
+    "url": "https://emoji.awkchan.top/assets/douyin/小黄鸭.png"
+  },
+  "棒棒糖": {
+    "desc": "棒棒糖",
+    "url": "https://emoji.awkchan.top/assets/douyin/棒棒糖.png"
+  },
+  "纸飞机": {
+    "desc": "纸飞机",
+    "url": "https://emoji.awkchan.top/assets/douyin/纸飞机.png"
+  },
+  "必胜": {
+    "desc": "必胜",
+    "url": "https://emoji.awkchan.top/assets/douyin/必胜.png"
+  },
+  "粽子": {
+    "desc": "粽子",
+    "url": "https://emoji.awkchan.top/assets/douyin/粽子.png"
+  },
+  "象": {
+    "desc": "象",
+    "url": "https://emoji.awkchan.top/assets/douyin/象.png"
+  },
+  "小红花": {
+    "desc": "小红花",
+    "url": "https://emoji.awkchan.top/assets/douyin/小红花.png"
+  },
+  "罗三炮": {
+    "desc": "罗三炮",
+    "url": "https://emoji.awkchan.top/assets/douyin/罗三炮.png"
+  },
+  "戳一戳": {
+    "desc": "戳一戳",
+    "url": "https://emoji.awkchan.top/assets/douyin/戳一戳.png"
+  },
+  "🎌": {
+    "desc": "🎌",
+    "url": "https://emoji.awkchan.top/assets/douyin/🎌.png"
+  },
+  "爱了爱了": {
+    "desc": "爱了爱了",
+    "url": "https://emoji.awkchan.top/assets/douyin/爱了爱了.png"
+  },
+  "狗头坏笑": {
+    "desc": "狗头坏笑",
+    "url": "https://emoji.awkchan.top/assets/douyin/狗头坏笑.png"
+  },
+  "绝了": {
+    "desc": "绝了",
+    "url": "https://emoji.awkchan.top/assets/douyin/绝了.png"
+  },
+  "厉害了": {
+    "desc": "厉害了",
+    "url": "https://emoji.awkchan.top/assets/douyin/厉害了.png"
+  },
+  "么么哒": {
+    "desc": "么么哒",
+    "url": "https://emoji.awkchan.top/assets/douyin/么么哒.png"
+  },
+  "啪啪打脸": {
+    "desc": "啪啪打脸",
+    "url": "https://emoji.awkchan.top/assets/douyin/啪啪打脸.png"
+  },
+  "小心心": {
+    "desc": "小心心",
+    "url": "https://emoji.awkchan.top/assets/douyin/小心心.png"
+  },
+  "在线吃瓜": {
+    "desc": "在线吃瓜",
+    "url": "https://emoji.awkchan.top/assets/douyin/在线吃瓜.png"
+  },
+  "来聊天": {
+    "desc": "来聊天",
+    "url": "https://emoji.awkchan.top/assets/douyin/来聊天.png"
+  },
+  "电量耗尽": {
+    "desc": "电量耗尽",
+    "url": "https://emoji.awkchan.top/assets/douyin/电量耗尽.png"
+  },
+  "别发癫了": {
+    "desc": "别发癫了",
+    "url": "https://emoji.awkchan.top/assets/douyin/别发癫了.png"
+  },
+  "nonono": {
+    "desc": "nonono",
+    "url": "https://emoji.awkchan.top/assets/douyin/nonono.png"
+  },
+  "看赴山海": {
+    "desc": "看赴山海",
+    "url": "https://emoji.awkchan.top/assets/douyin/看赴山海.png"
+  },
+  "敬礼": {
+    "desc": "敬礼",
+    "url": "https://emoji.awkchan.top/assets/douyin/敬礼.png"
+  },
+  "红旗": {
+    "desc": "红旗",
+    "url": "https://emoji.awkchan.top/assets/douyin/红旗.png"
+  },
+  "吃月饼": {
+    "desc": "吃月饼",
+    "url": "https://emoji.awkchan.top/assets/douyin/吃月饼.png"
+  },
+  "玉兔": {
+    "desc": "玉兔",
+    "url": "https://emoji.awkchan.top/assets/douyin/玉兔.png"
+  },
+  "斜刘海": {
+    "desc": "斜刘海",
+    "url": "https://emoji.awkchan.top/assets/douyin/斜刘海.png"
+  },
+  "绿发": {
+    "desc": "绿发",
+    "url": "https://emoji.awkchan.top/assets/douyin/绿发.png"
+  },
+  "黄发": {
+    "desc": "黄发",
+    "url": "https://emoji.awkchan.top/assets/douyin/黄发.png"
+  },
+  "装酷": {
+    "desc": "装酷",
+    "url": "https://emoji.awkchan.top/assets/douyin/装酷.png"
+  },
+  "粉发": {
+    "desc": "粉发",
+    "url": "https://emoji.awkchan.top/assets/douyin/粉发.png"
+  },
+  "求好运": {
+    "desc": "求好运",
+    "url": "https://emoji.awkchan.top/assets/douyin/求好运.png"
+  },
+  "超人": {
+    "desc": "超人",
+    "url": "https://emoji.awkchan.top/assets/douyin/超人.png"
+  },
+  "小丑": {
+    "desc": "小丑",
+    "url": "https://emoji.awkchan.top/assets/douyin/小丑.png"
+  },
+  "小鬼": {
+    "desc": "小鬼",
+    "url": "https://emoji.awkchan.top/assets/douyin/小鬼.png"
+  },
+  "雪球": {
+    "desc": "雪球",
+    "url": "https://emoji.awkchan.top/assets/douyin/雪球.png"
+  },
+  "喜羊羊": {
+    "desc": "喜羊羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/喜羊羊.png"
+  },
+  "美羊羊": {
+    "desc": "美羊羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/美羊羊.png"
+  },
+  "懒羊羊": {
+    "desc": "懒羊羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/懒羊羊.png"
+  },
+  "暖羊羊": {
+    "desc": "暖羊羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/暖羊羊.png"
+  },
+  "沸羊羊": {
+    "desc": "沸羊羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/沸羊羊.png"
+  },
+  "灰太狼": {
+    "desc": "灰太狼",
+    "url": "https://emoji.awkchan.top/assets/douyin/灰太狼.png"
+  },
+  "红太狼": {
+    "desc": "红太狼",
+    "url": "https://emoji.awkchan.top/assets/douyin/红太狼.png"
+  },
+  "举重": {
+    "desc": "举重",
+    "url": "https://emoji.awkchan.top/assets/douyin/举重.png"
+  },
+  "乒乓球": {
+    "desc": "乒乓球",
+    "url": "https://emoji.awkchan.top/assets/douyin/乒乓球.png"
+  },
+  "篮球": {
+    "desc": "篮球",
+    "url": "https://emoji.awkchan.top/assets/douyin/篮球.png"
+  },
+  "激情": {
+    "desc": "激情",
+    "url": "https://emoji.awkchan.top/assets/douyin/激情.png"
+  },
+  "奖牌": {
+    "desc": "奖牌",
+    "url": "https://emoji.awkchan.top/assets/douyin/奖牌.png"
+  },
+  "毛雪人": {
+    "desc": "毛雪人",
+    "url": "https://emoji.awkchan.top/assets/douyin/毛雪人.png"
+  },
+  "毛手套": {
+    "desc": "毛手套",
+    "url": "https://emoji.awkchan.top/assets/douyin/毛手套.png"
+  },
+  "火锅": {
+    "desc": "火锅",
+    "url": "https://emoji.awkchan.top/assets/douyin/火锅.png"
+  },
+  "奶茶": {
+    "desc": "奶茶",
+    "url": "https://emoji.awkchan.top/assets/douyin/奶茶.png"
+  },
+  "追剧": {
+    "desc": "追剧",
+    "url": "https://emoji.awkchan.top/assets/douyin/追剧.png"
+  },
+  "下雪": {
+    "desc": "下雪",
+    "url": "https://emoji.awkchan.top/assets/douyin/下雪.png"
+  },
+  "尼克": {
+    "desc": "尼克",
+    "url": "https://emoji.awkchan.top/assets/douyin/尼克.png"
+  },
+  "朱迪": {
+    "desc": "朱迪",
+    "url": "https://emoji.awkchan.top/assets/douyin/朱迪.png"
+  },
+  "盖瑞": {
+    "desc": "盖瑞",
+    "url": "https://emoji.awkchan.top/assets/douyin/盖瑞.png"
+  },
+  "夏奇羊": {
+    "desc": "夏奇羊",
+    "url": "https://emoji.awkchan.top/assets/douyin/夏奇羊.png"
+  },
+  "马市长": {
+    "desc": "马市长",
+    "url": "https://emoji.awkchan.top/assets/douyin/马市长.png"
+  }
+}

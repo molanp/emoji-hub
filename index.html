@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji API Hub - 社交媒体表情资源托管</title>
     <meta name="description" content="统一表情资源托管中心，提供百度贴吧、小红书、快手、小黑盒、抖音等平台的表情 API 节点及在线预览。">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/platform-config.js"></script>
     <style>
         .platform-card:hover .icon-box {
             transform: scale(1.1) rotate(-5deg);
@@ -34,188 +36,9 @@
             </p>
         </header>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            <!-- 贴吧 -->
-            <div
-                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-sky-500/10 transition-all flex flex-col">
-                <div class="flex items-start justify-between mb-8">
-                    <div
-                        class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-sky-50">
-                        🐾</div>
-                    <a href="tieba.html"
-                        class="flex items-center gap-2 text-sm font-black text-sky-600 hover:text-sky-700">
-                        进入预览
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <h3 class="text-2xl font-black mb-3">百度贴吧</h3>
-                <p class="text-slate-400 text-sm mb-6 font-medium">经典贴吧系列表情包</p>
-                <div class="mt-auto">
-                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
-                        <code
-                            class="text-xs font-mono text-slate-600 block break-all">https://emoji.awkchan.top/assets/tieba/<span class="text-blue-500 font-bold">{id}</span>.png</code>
-                        <button onclick="copyApi('https://emoji.awkchan.top/assets/tieba/{id}.png')"
-                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 小红书 -->
-            <div
-                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-red-500/10 transition-all flex flex-col">
-                <div class="flex items-start justify-between mb-8">
-                    <div
-                        class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-red-50">
-                        📕</div>
-                    <a href="rednote.html"
-                        class="flex items-center gap-2 text-sm font-black text-red-500 hover:text-red-600">
-                        进入预览 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <h3 class="text-2xl font-black mb-3">小红书</h3>
-                <p class="text-slate-400 text-sm mb-6 font-medium">小红书平台表情包</p>
-                <div class="mt-auto">
-                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
-                        <code
-                            class="text-xs font-mono text-slate-600 block break-all">https://emoji.awkchan.top/assets/rednote/<span class="text-blue-500 font-bold">{id}</span>.png</code>
-                        <button onclick="copyApi('https://emoji.awkchan.top/assets/rednote/{id}.png')"
-                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- 快手 -->
-            <div
-                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-orange-400/10 transition-all flex flex-col">
-                <div class="flex items-start justify-between mb-8">
-                    <div
-                        class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-orange-50">
-                        🎥</div>
-                    <a href="kuaishou.html"
-                        class="flex items-center gap-2 text-sm font-black text-orange-500 hover:text-orange-600">
-
-                        <a href="kuaishou.html"
-                            class="flex items-center gap-2 text-sm font-black text-blue-600 hover:text-blue-700">
-                            进入预览 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                </div>
-                <h3 class="text-2xl font-black mb-3">快手</h3>
-                <p class="text-slate-400 text-sm mb-6 font-medium">快手平台表情包</p>
-                <div class="mt-auto">
-                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
-                        <code
-                            class="text-xs font-mono text-slate-600 block break-all">https://emoji.awkchan.top/assets/kuaishou/<span class="text-blue-500 font-bold">{id}</span>.png</code>
-                        <button onclick="copyApi('https://emoji.awkchan.top/assets/kuaishou/{id}.png')"
-                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 小黑盒 -->
-            <div
-                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-zinc-500/10 transition-all flex flex-col">
-                <div class="flex items-start justify-between mb-8">
-                    <div
-                        class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-zinc-100">
-                        📦</div>
-                    <a href="heybox.html"
-                        class="flex items-center gap-2 text-sm font-black text-zinc-700 hover:text-zinc-900">
-
-                        <a href="heybox.html"
-                            class="flex items-center gap-2 text-sm font-black text-blue-600 hover:text-blue-700">
-                            进入预览 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                </div>
-                <h3 class="text-2xl font-black mb-3">小黑盒</h3>
-                <p class="text-slate-400 text-sm mb-6 font-medium">小黑盒社区表情包</p>
-                <div class="mt-auto">
-                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
-                        <code
-                            class="text-xs font-mono text-slate-600 block break-all">https://emoji.awkchan.top/assets/heybox/<span class="text-blue-500 font-bold">{id}</span>.png</code>
-                        <button onclick="copyApi('https://emoji.awkchan.top/assets/heybox/{id}.png')"
-                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- 抖音 -->
-            <div
-                class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all flex flex-col">
-                <div class="flex items-start justify-between mb-8">
-                    <!-- 用青色+黑的盒子，借一点抖音配色的感觉 -->
-                    <div
-                        class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-cyan-50 text-cyan-500">
-                        🎵</div>
-                    <a href="douyin.html"
-                        class="flex items-center gap-2 text-sm font-black text-cyan-500 hover:text-cyan-600">
-                        进入预览 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <h3 class="text-2xl font-black mb-3">抖音</h3>
-                <p class="text-slate-400 text-sm mb-6 font-medium">抖音平台表情包</p>
-                <div class="mt-auto">
-                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
-                        <code
-                            class="text-xs font-mono text-slate-600 block break-all">https://emoji.awkchan.top/assets/douyin/<span class="text-blue-500 font-bold">{id}</span>.png</code>
-                        <button onclick="copyApi('https://emoji.awkchan.top/assets/douyin/{id}.png')"
-                            class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
+        <section id="platform-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 卡片由脚本注入 -->
         </section>
-
         <footer
             class="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-slate-300 text-sm font-bold tracking-tight">© 2026 EMOJI-HUB SERVICE</div>
@@ -229,14 +52,90 @@
 
     <script>
         function copyApi(text) {
-            const el = document.createElement('textarea');
+            const el = document.createElement("textarea");
             el.value = text;
             document.body.appendChild(el);
             el.select();
-            document.execCommand('copy');
+            document.execCommand("copy");
             document.body.removeChild(el);
-            alert('接口格式已复制');
+            alert("接口格式已复制");
         }
+
+        // 根据配置渲染平台卡片
+        (function renderPlatforms() {
+            const container = document.getElementById("platform-list");
+            if (!container || !window.EMOJI_PLATFORMS) return;
+
+            const cardsHtml = window.EMOJI_PLATFORMS
+                .map((p) => {
+                    return `
+                    <div class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl ${p.color.hoverShadow} transition-all flex flex-col">
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner ${p.color.iconBg}">
+                                ${p.icon}
+                            </div>
+                            <a href="${p.path}" class="flex items-center gap-2 text-sm font-black ${p.color.text} hover:opacity-80">
+                                进入预览
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3">${p.name}</h3>
+                        <p class="text-slate-400 text-sm mb-6 font-medium">${p.desc}</p>
+                        <div class="mt-auto">
+                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2">Endpoint</div>
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 relative group/api">
+                                <code class="text-xs font-mono text-slate-600 block break-all">
+                                    ${p.endpoint.replace("{id}", '<span class="text-blue-500 font-bold">{id}</span>')}
+                                </code>
+                                <button onclick="copyApi('${p.endpoint}')" class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                })
+                .join("");
+
+            // logo 卡片
+            const logoEndpoint = window.EMOJI_LOGO_ENDPOINT;
+            const logoCard = `
+                <div class="platform-card group p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all flex flex-col bg-gradient-to-r from-red-500 via-blue-500 to-purple-500">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner bg-white/20 backdrop-blur-sm">
+                            🕹️
+                        </div>
+                        <a href="logo.html" class="flex items-center gap-2 text-sm font-black text-white hover:text-slate-100">
+                            进入预览
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="text-2xl font-black mb-3 text-white">logo</h3>
+                    <p class="text-white/80 text-sm mb-6 font-medium">各平台logo</p>
+                    <div class="mt-auto">
+                        <div class="text-[10px] font-black text-white/60 uppercase tracking-tighter mb-2">Endpoint</div>
+                        <div class="bg-white/20 backdrop-blur-sm p-4 rounded-2xl border border-white/30 relative group/api">
+                            <code class="text-xs font-mono text-white block break-all">
+                                ${logoEndpoint.replace("{platform}", '<span class="text-white font-bold">{platform}</span>')}
+                            </code>
+                            <button onclick="copyApi('${logoEndpoint}')" class="absolute right-2 top-2 opacity-0 group-hover/api:opacity-100 p-2 bg-white shadow-sm rounded-lg hover:bg-slate-100 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = cardsHtml + logoCard;
+        })();
     </script>
 </body>
 

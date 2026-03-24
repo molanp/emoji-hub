@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!appRoot) return;
 
   const initialPlatform = appRoot.getAttribute("data-platform") || "tieba";
+  const platforms = window.EMOJI_PLATFORMS || [];
 
   createApp({
     setup() {
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         openPreview,
         closePreview,
         copy,
+        platforms, // 暴露给模板循环使用
       };
     },
   }).mount("#app");

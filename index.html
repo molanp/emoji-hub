@@ -12,6 +12,10 @@
     <script src="/assets/platform-config.js"></script>
     <script src="/assets/platform.js" defer></script>
     <style>
+        [v-cloak] {
+            display: none;
+        }
+
         .platform-card:hover .icon-box {
             transform: scale(1.1) rotate(-5deg);
         }
@@ -44,10 +48,9 @@
             <!-- 平台卡片，由 Vue 渲染，包含 logo 在内 -->
             <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
                 <div v-for="p in platforms" :key="p.id"
-                    class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 transition-all flex flex-col"
+                    class="platform-card group bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 transition-all flex flex-col hover:shadow-2xl"
                     :class="[
                     p.color.hoverShadow,
-                    currentPlatform === p.id ? 'ring-2 ring-offset-2 ring-blue-500' : 'hover:shadow-2xl'
                     ]">
                     <div class="flex items-start justify-between mb-8">
                         <div class="icon-box w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-all shadow-inner"

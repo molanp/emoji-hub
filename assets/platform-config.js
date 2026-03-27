@@ -7,7 +7,7 @@ window.EMOJI_PLATFORMS = [
     icon: "🐾",
     color: {
       main: "sky",
-      text: "text-sky-600",
+      text: "text-sky-400",
       hoverShadow: "hover:shadow-sky-500/10",
       iconBg: "bg-sky-50",
     },

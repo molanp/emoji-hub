@@ -2,8 +2,7 @@ window.EMOJI_PLATFORMS = [
   {
     id: "tieba",
     name: "百度贴吧",
-    slug: "tieba",
-    path: "tieba.html",
+    path: "#/tieba",
     desc: "经典贴吧系列表情包",
     icon: "🐾",
     color: {
@@ -12,13 +11,12 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-sky-500/10",
       iconBg: "bg-sky-50",
     },
-    endpoint: "https://emoji.awkchan.top/assets/tieba/{id}.png",
+    endpoint: "/assets/tieba/{id}.png",
   },
   {
     id: "rednote",
     name: "小红书",
-    slug: "rednote",
-    path: "rednote.html",
+    path: "#/rednote",
     desc: "小红书平台表情包",
     icon: "📕",
     color: {
@@ -27,28 +25,26 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-red-500/10",
       iconBg: "bg-red-50",
     },
-    endpoint: "https://emoji.awkchan.top/assets/rednote/{id}.png",
+    endpoint: "/assets/rednote/{id}.png",
   },
   {
     id: "douyin",
     name: "抖音",
-    slug: "douyin",
-    path: "douyin.html",
+    path: "#/douyin",
     desc: "抖音平台表情包",
     icon: "🎵",
     color: {
       main: "cyan",
-      text: "text-cyan-500",
+      text: "text-cyan-400",
       hoverShadow: "hover:shadow-cyan-500/10",
       iconBg: "bg-cyan-50",
     },
-    endpoint: "https://emoji.awkchan.top/assets/douyin/{id}.png",
+    endpoint: "/assets/douyin/{id}.png",
   },
   {
     id: "kuaishou",
     name: "快手",
-    slug: "kuaishou",
-    path: "kuaishou.html",
+    path: "#/kuaishou",
     desc: "快手平台表情包",
     icon: "🎥",
     color: {
@@ -57,24 +53,34 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-orange-400/10",
       iconBg: "bg-orange-50",
     },
-    endpoint: "https://emoji.awkchan.top/assets/kuaishou/{id}.png",
+    endpoint: "/assets/kuaishou/{id}.png",
   },
   {
     id: "heybox",
     name: "小黑盒",
-    slug: "heybox",
-    path: "heybox.html",
+    path: "#/heybox",
     desc: "小黑盒社区表情包",
     icon: "📦",
     color: {
       main: "zinc",
-      text: "text-zinc-700",
+      text: "text-zinc-800",
       hoverShadow: "hover:shadow-zinc-500/10",
       iconBg: "bg-zinc-100",
     },
-    endpoint: "https://emoji.awkchan.top/assets/heybox/{id}.png",
+    endpoint: "/assets/heybox/{id}.png",
+  },
+  {
+    id: "logo",
+    name: "LOGO",
+    path: "#/logo",
+    desc: "各平台 logo 资源",
+    icon: "🕹️",
+    color: {
+      main: "gradient",
+      text: "text-purple-500",
+      hoverShadow: "hover:shadow-cyan-500/10",
+      iconBg: "bg-white/20 backdrop-blur-sm",
+    },
+    endpoint: "/assets/logo/{id}.png",
   },
 ];
-
-window.EMOJI_LOGO_ENDPOINT =
-  "https://emoji.awkchan.top/assets/logo/{platform}.png";

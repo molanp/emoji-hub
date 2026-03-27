@@ -1,46 +1,46 @@
 {
   "bilibili": {
     "desc": "哔哩哔哩",
-    "url": "https://emoji.awkchan.top/assets/logo/bilibili.png"
+    "url": "/assets/logo/bilibili.png"
   },
   "douyin": {
     "desc": "抖音",
-    "url": "https://emoji.awkchan.top/assets/logo/douyin.png"
+    "url": "/assets/logo/douyin.png"
   },
   "duitang": {
     "desc": "堆糖",
-    "url": "https://emoji.awkchan.top/assets/logo/duitang.png"
+    "url": "/assets/logo/duitang.png"
   },
   "heybox": {
     "desc": "小黑盒",
-    "url": "https://emoji.awkchan.top/assets/logo/heybox.png"
+    "url": "/assets/logo/heybox.png"
   },
   "kuaishou": {
     "desc": "快手",
-    "url": "https://emoji.awkchan.top/assets/logo/kuaishou.png"
+    "url": "/assets/logo/kuaishou.png"
   },
   "lofter": {
     "desc": "乐乎",
-    "url": "https://emoji.awkchan.top/assets/logo/lofter.png"
+    "url": "/assets/logo/lofter.png"
   },
   "rednote": {
     "desc": "小红书",
-    "url": "https://emoji.awkchan.top/assets/logo/rednote.png"
+    "url": "/assets/logo/rednote.png"
   },
   "tieba": {
     "desc": "百度贴吧",
-    "url": "https://emoji.awkchan.top/assets/logo/tieba.png"
+    "url": "/assets/logo/tieba.png"
   },
   "weibo": {
     "desc": "微博",
-    "url": "https://emoji.awkchan.top/assets/logo/weibo.png"
+    "url": "/assets/logo/weibo.png"
   },
   "x": {
     "desc": "X(原 Twitter)",
-    "url": "https://emoji.awkchan.top/assets/logo/x.png"
+    "url": "/assets/logo/x.png"
   },
   "zhihu": {
     "desc": "知乎",
-    "url": "https://emoji.awkchan.top/assets/logo/zhihu.png"
+    "url": "/assets/logo/zhihu.png"
   }
 }

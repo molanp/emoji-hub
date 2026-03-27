@@ -81,6 +81,6 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-cyan-500/10",
       iconBg: "bg-white/20 backdrop-blur-sm",
     },
-    endpoint: "/assets/logo/{id}.png",
+    endpoint: "/assets/logo/{platform}.png",
   },
 ];

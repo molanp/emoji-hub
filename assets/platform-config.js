@@ -63,7 +63,7 @@ window.EMOJI_PLATFORMS = [
     icon: "📦",
     color: {
       main: "zinc",
-      text: "text-zinc-800",
+      text: "text-zinc-700",
       hoverShadow: "hover:shadow-zinc-500/10",
       iconBg: "bg-zinc-100",
     },

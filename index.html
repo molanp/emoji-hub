@@ -16,6 +16,10 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="assets/platform-config.js"></script>
     <script src="assets/platform.js" defer></script>
+    <script type="module">
+        import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
+        injectSpeedInsights();
+    </script>
     <style>
         [v-cloak] {
             display: none;

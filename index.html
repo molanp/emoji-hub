@@ -261,6 +261,16 @@
             </div>
         </div>
     </div>
+<script>
+    function initTailwind() {
+        if (window.tailwind) {
+            window.tailwind.config = { darkMode: 'media' };
+        } else {
+            setTimeout(initTailwind, 10);
+        }
+    }
+    initTailwind();
+</script>
 </body>
 
 </html>

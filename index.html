@@ -22,7 +22,7 @@
     <script src="assets/platform-config.js"></script>
     <script src="assets/platform.js" defer></script>
     <script type="module">
-        import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
+        import { injectSpeedInsights } from 'https://unpkg.com/@vercel/speed-insights@2.0.0/dist/index.mjs';
         injectSpeedInsights();
     </script>
     <style>
@@ -181,7 +181,7 @@
                 </main>
 
                 <!-- 骨架 -->
-                <main v-if="loading" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <main v-if="loading" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
                     <div v-for="n in 12" :key="n"
                         class="face-card bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center">
                         <div class="aspect-square w-full mb-3 rounded-2xl image-loading"></div>
@@ -205,7 +205,7 @@
             class="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-slate-300 text-sm font-bold tracking-tight">© 2026 EMOJI-HUB SERVICE</div>
             <div class="flex gap-8 text-slate-400 text-sm font-bold">
-                <span class="hover:text-blue-500 cursor-pointer">Status: Online</span>
+                <a class="hover:text-blue-500 cursor-pointer" href="mailto:molanpp@outlook.com">Email</a>
                 <a class="hover:text-blue-500 cursor-pointer" href="https://github.com/molanp/emoji-hub">Github</a>
             </div>
         </footer>

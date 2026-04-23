@@ -11,7 +11,7 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-sky-500/10",
       iconBg: "bg-sky-50",
     },
-    endpoint: "/assets/tieba/{id}.png",
+    endpoint: "/assets/tieba/{id}.webp",
   },
   {
     id: "rednote",
@@ -25,7 +25,7 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-red-500/10",
       iconBg: "bg-red-50",
     },
-    endpoint: "/assets/rednote/{id}.png",
+    endpoint: "/assets/rednote/{id}.webp",
   },
   {
     id: "douyin",
@@ -39,7 +39,7 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-cyan-500/10",
       iconBg: "bg-cyan-50",
     },
-    endpoint: "/assets/douyin/{id}.png",
+    endpoint: "/assets/douyin/{id}.webp",
   },
   {
     id: "kuaishou",
@@ -53,7 +53,7 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-orange-400/10",
       iconBg: "bg-orange-50",
     },
-    endpoint: "/assets/kuaishou/{id}.png",
+    endpoint: "/assets/kuaishou/{id}.webp",
   },
   {
     id: "heybox",
@@ -67,7 +67,7 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-zinc-500/10",
       iconBg: "bg-zinc-100",
     },
-    endpoint: "/assets/heybox/{id}.png",
+    endpoint: "/assets/heybox/{id}.webp",
   },
   {
     id: "logo",
@@ -81,6 +81,6 @@ window.EMOJI_PLATFORMS = [
       hoverShadow: "hover:shadow-cyan-500/10",
       iconBg: "bg-white/20 backdrop-blur-sm",
     },
-    endpoint: "/assets/logo/{platform}.png",
+    endpoint: "/assets/logo/{platform}.webp",
   },
 ];

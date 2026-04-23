@@ -1,46 +1,46 @@
 {
   "bilibili": {
     "desc": "哔哩哔哩",
-    "url": "/assets/logo/bilibili.png"
+    "url": "/assets/logo/bilibili.webp"
   },
   "douyin": {
     "desc": "抖音",
-    "url": "/assets/logo/douyin.png"
+    "url": "/assets/logo/douyin.webp"
   },
   "duitang": {
     "desc": "堆糖",
-    "url": "/assets/logo/duitang.png"
+    "url": "/assets/logo/duitang.webp"
   },
   "heybox": {
     "desc": "小黑盒",
-    "url": "/assets/logo/heybox.png"
+    "url": "/assets/logo/heybox.webp"
   },
   "kuaishou": {
     "desc": "快手",
-    "url": "/assets/logo/kuaishou.png"
+    "url": "/assets/logo/kuaishou.webp"
   },
   "lofter": {
     "desc": "乐乎",
-    "url": "/assets/logo/lofter.png"
+    "url": "/assets/logo/lofter.webp"
   },
   "rednote": {
     "desc": "小红书",
-    "url": "/assets/logo/rednote.png"
+    "url": "/assets/logo/rednote.webp"
   },
   "tieba": {
     "desc": "百度贴吧",
-    "url": "/assets/logo/tieba.png"
+    "url": "/assets/logo/tieba.webp"
   },
   "weibo": {
     "desc": "微博",
-    "url": "/assets/logo/weibo.png"
+    "url": "/assets/logo/weibo.webp"
   },
   "x": {
     "desc": "X(原 Twitter)",
-    "url": "/assets/logo/x.png"
+    "url": "/assets/logo/x.webp"
   },
   "zhihu": {
     "desc": "知乎",
-    "url": "/assets/logo/zhihu.png"
+    "url": "/assets/logo/zhihu.webp"
   }
 }

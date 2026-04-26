@@ -3,6 +3,10 @@
     "desc": "哔哩哔哩",
     "url": "/assets/logo/bilibili.webp"
   },
+  "buff": {
+    "desc": "BUFF",
+    "url": "/assets/logo/buff.webp"
+  },
   "douyin": {
     "desc": "抖音",
     "url": "/assets/logo/douyin.webp"
@@ -20,7 +24,7 @@
     "url": "/assets/logo/kuaishou.webp"
   },
   "lofter": {
-    "desc": "乐乎",
+    "desc": "LOFTER",
     "url": "/assets/logo/lofter.webp"
   },
   "rednote": {

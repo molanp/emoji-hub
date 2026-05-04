@@ -14,6 +14,20 @@ window.EMOJI_PLATFORMS = [
     endpoint: "/assets/tieba/{id}.webp",
   },
   {
+    id: "buff",
+    name: "BUFF",
+    path: "#/buff",
+    desc: "网易BUFF系列表情包",
+    icon: "🔫",
+    color: {
+      main: "indigo",
+      text: "text-indigo-700",
+      hoverShadow: "hover:shadow-indigo-600/15",
+      iconBg: "bg-indigo-50",
+    },
+    endpoint: "/assets/buff/{id}.webp",
+  },
+  {
     id: "rednote",
     name: "小红书",
     path: "#/rednote",

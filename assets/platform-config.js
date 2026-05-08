@@ -84,6 +84,20 @@ window.EMOJI_PLATFORMS = [
     endpoint: "/assets/heybox/{id}.webp",
   },
   {
+    id: "coolapk",
+    name: "酷安",
+    path: "#/coolapk",
+    desc: "酷安社区表情包",
+    icon: "📱",
+    color: {
+      main: "emerald",
+      text: "text-emerald-500",
+      hoverShadow: "hover:shadow-emerald-500/10",
+      iconBg: "bg-emerald-50",
+    },
+    endpoint: "/assets/coolapk/{id}.webp",
+  },
+  {
     id: "logo",
     name: "LOGO",
     path: "#/logo",

@@ -7,6 +7,10 @@
     "desc": "BUFF",
     "url": "/assets/logo/buff.webp"
   },
+  "coolapk": {
+    "desc": "酷安",
+    "url": "/assets/logo/coolapk.webp"
+  },
   "douyin": {
     "desc": "抖音",
     "url": "/assets/logo/douyin.webp"
